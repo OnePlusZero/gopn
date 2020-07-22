@@ -1,0 +1,90 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/pew.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet" type="text/css"> 
+    </head>
+
+    <head>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="{% url 'post_list' %}">КП "ГБЛПД" ДОР"</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="redux">Галлерея <span class="sr-only">(current)</span></a>
+                </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="filka">Новости <span class="sr-only">(current)</span></a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="about">Контакты <span class="sr-only">(current)</span></a>
+                    </li>
+                    </ul>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </head>
+    <body>
+     <div>
+          <div class="pirka">
+            <div class="">
+              <img  src="{% static "01.jpg" %}" width="680" height="360" alt="" align="left" float="right">
+            </div>
+             <div class="furka">
+              <p class="corus">
+                КП «Гейківська багатопрфільна лікарня з надання психіатричної допомоги»ДОР» знаходиться  в Криворізькому районі на відстані 25 км від м. Кривий Ріг в напрямку м. Миколаїв.
+              </p>
+              <p class="corus">
+                Заклад має добре облаштовану, мальовничу територію загальною площею 13 га, розрахований на 300 ліжок та надає допомогу за всіма видами психічних розладів.
+              </p>
+              <p class="corus">
+                В закладі працюють висококваліфіковані медичні спеціалісти загалом з вищою кваліфікаційною категорією.
+              </p>
+              <p class="corus">
+                В структуру підприємства входять: 4 психіатричних відділення, приймальне відділення, клініко-діагностична лабораторія з бактеріологічним відділом, кабінет ЕКГ, ЕХО та енцефалографії, стоматологічний, R-ген діагностичний кабінети, кабінет УЗД, фізіотерапевтичний кабінет з широким спектром послуг.
+              </p>
+              <p class="corus">
+                Всі кабінети оснащені достатньою кількістю якісного медичного обладнання, де працюють ряд вузьких спеціалістів: терапевт, невропатолог, стоматолог, рентгенолог, лікар з ультразвукової діагностики.
+              </p>
+              <p class="corus">
+                Лікарня є складним технічно-господарським комплексом, який збудований у 1980 р. та має в складі: газову котельню, артезіанську свердловину з питною водою та централізоване водопостачання, очисні споруди, пральню, харчоблок, централізоване стерилізаційне відділення.
+              </p>
+              <p class="corus">
+                Затишні палати та доброзичливий персонал завжди готові надати психіатричну допомогу всім, хто її потребує.
+              </p>
+            </div> 
+          </div>
+      
+     </div>
+
+        
+        <div id="footer">
+            <div>
+                &copy; Dmitriy Krylovskiy
+            </div>
+            
+        </div>
+        
+
+    </body>
+</html>

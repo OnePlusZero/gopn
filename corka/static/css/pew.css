@@ -1,0 +1,111 @@
+
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+#footer {
+    position:  fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    font-family: 'Ubuntu';
+   }
+#footer div {
+    padding: 6px; /* Поля вокруг текста */
+    background: #2F4F4F; /* Цвет фона */
+    }
+
+
+.thumb img  {
+    border: 2px solid #55c5e9; /* Рамка вокруг фотографии */
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #666; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+   }
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.box div {
+    width: 100px;
+    height: 100px;
+  }
+
+.corus {
+    font-family: 'Comfortaa';
+    text-indent: 20px;
+    padding-left: 25px;
+    font-size: 14;
+}  
+
+.coris {
+    font-family: 'Ubuntu';
+    text-align: center;
+    padding-left: 25px;
+    font-size: 22;
+}  
+
+
+
+.figma {
+    margin-top: 25px;
+}
+
+.pewus {
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+  }
+
+.book {
+    column-count: 3;
+    column-width: 200px;
+    column-gap: 2em;
+   }
+.book h1 {
+    column-span: all;
+   }
+
+.pirka {
+    margin: 20;
+}
+
+.furka{
+    margin-left: 20px;
+}
+
+
+.cores {
+    margin: 30;
+    text-align: center;
+    padding-left: 25px;
+    font-size: 16;
+}  
+/* эффекты для картинок */
+.coruss {
+    font-family: 'Comfortaa';
+    text-indent: 20px;
+    padding-left: 45%;
+    font-size: 14;
+}  
+
+.termos {
+    font-family: 'Comfortaa'
+}
+
+.termoss {
+    font-family: 'Comfortaa';
+    font-size: 14;
+}

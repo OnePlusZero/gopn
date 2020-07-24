@@ -11,31 +11,38 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet"> 
+        <meta charset="utf-8">
+        <title>Контакти</title>
     </head>
 
     <head>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="{% url 'post_list' %}"><p class="termoss">"ГБЛПД" ДОР" КП</p></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="redux"><p class="termos">Галлерея</p> <span class="sr-only">(current)</span></a>
-                </li>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #087971;">
+  <a class="navbar-brand" href="{% url 'post_list' %}">Головна</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="about"><p class="termos">Контакти</p> <span class="sr-only">(current)</span></a>
-                      </li>
-                      </ul>
-                  </div>
-              </ul>
-            </div>
-          </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Про нас
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="redux">Галлерея фото</a>
+          <a class="dropdown-item" href="#">Галлерея вiдео</a>
+          <a class="dropdown-item" href="#">Послуги</a>
+          <a class="dropdown-item" href="#">Чим добратися?</a>
+          <a class="dropdown-item" href="#">Iсторiя закаладу</a>
+          <a class="dropdown-item" href="#">Структура</a>
+          <a class="dropdown-item" href="about">Звязок з нами</a>
+        </div>
+      </li>
+
+  </div>
+</nav>
         </head>
     <body>
       <div class="coris">

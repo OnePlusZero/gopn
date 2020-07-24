@@ -16,29 +16,33 @@
     </head>
 
     <head>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="{% url 'post_list' %}"><p class="termoss">"ГБЛПД" ДОР" КП</p></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="redux"><p class="termos">Галлерея</p><span class="sr-only">(current)</span></a>
-                </li>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #087971;">
+  <a class="navbar-brand" href="{% url 'post_list' %}">Головна</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="about"><p class="termos">Контакти</p> <span class="sr-only">(current)</span></a>
-                    </li>
-                    </ul>
-                </div>
-               
-                </ul>
-            </div>
-          </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Про нас
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="redux">Галлерея фото</a>
+          <a class="dropdown-item" href="#">Галлерея вiдео</a>
+          <a class="dropdown-item" href="#">Послуги</a>
+          <a class="dropdown-item" href="#">Чим добратися?</a>
+          <a class="dropdown-item" href="#">Iсторiя закаладу</a>
+          <a class="dropdown-item" href="#">Структура</a>
+          <a class="dropdown-item" href="about">Звязок з нами</a>
+        </div>
+      </li>
+
+  </div>
+</nav>
         </head>
     <body>
       <div class="media">
@@ -109,6 +113,40 @@
         <div class="cores">
           <iframe width="1024" height="768" src="https://www.youtube.com/embed/C8r50uvwJ8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+
+        <div>
+          <div class="gallery">
+  <a target="_blank" href="{% static "03.jpg" %}">
+    <img src="{% static "03.jpg" %}" alt="Cinque Terre" width="1280" height="1024">
+  </a>
+  <div class="desc">Вход</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank"  href="{% static "01.jpg" %}">
+    <img ssrc="{% static "01.jpg" %}" alt="Forest" width="1280" height="1024">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank"  href="{% static "02.jpg" %}">
+    <img src="{% static "02.jpg" %}" alt="Northern Lights" width="1280" height="1024">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank"  href="{% static "04.jpg" %}">
+    <img src="{% static "04.jpg" %}" alt="Mountains" width="1280" height="1024">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+        </div>
+
+
+
         
 
     </body>

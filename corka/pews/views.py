@@ -13,3 +13,6 @@ def about(request):
 
 def gal(request):
     return render(request, 'pews/gal.html')
+
+def howtous(request):
+    return render(request, 'pews/howtous.html')

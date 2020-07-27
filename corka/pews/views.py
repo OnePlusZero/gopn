@@ -4,7 +4,7 @@ from .models import Post
 # Create your views here.
 def post_list(request):
     return render(request, 'pews/index.html', {})
-    
+
 def position_list(request):
     return render(request, 'pews/indux.html', {})
 
@@ -16,3 +16,6 @@ def gal(request):
 
 def howtous(request):
     return render(request, 'pews/howtous.html')
+
+def test(request):
+    return render(request,'pews/test.html')

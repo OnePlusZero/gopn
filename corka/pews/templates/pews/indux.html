@@ -1,55 +1,15 @@
+{% extends "pews/base.html" %}
 {% load static %}
+{% block title %}
+Фото
+{% endblock  %}
 
-<html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/pew.css' %}">
-        
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet"> 
-        <meta charset="utf-8">
-        <title>Фото</title>
-    </head>
-
-    <head>
- <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #339966;">
-    <a class="navbar-brand" href="{% url 'post_list' %}">Головна</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Про нас
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="redux">Галлерея фото</a>
-          <a class="dropdown-item" href="gal">Галлерея вiдео</a>
-          <a class="dropdown-item" href="#">Послуги</a>
-          <a class="dropdown-item" href="howtous">Чим добратися?</a>
-          <a class="dropdown-item" href="#">Iсторiя закаладу</a>
-          <a class="dropdown-item" href="#">Структура</a>
-          <a class="dropdown-item" href="about">Звязок з нами</a>
-        </div>
-      </li>
-
-  </div>
-</nav>
-        </head>
-    <body>
+{% block content %}
 <div class="gallery">
   <a target="_blank" href="{% static "03.jpg" %}">
-    <img src="{% static "03.jpg" %}" alt="Вхiд" width="600" height="400">
+    <img src="{% static "03.jpg" %}" alt="Адмiнкорпус" width="600" height="400">
   </a>
-  <div class="desc">Вхiд</div>
+  <div class="desc">Адмiнкорпус</div>
 </div>
 
 <div class="gallery">
@@ -82,16 +42,16 @@
 
 <div class="gallery">
   <a target="_blank" href="{% static "06.jpg" %}">
-    <img src="{% static "06.jpg" %}" alt="Статуя в парку" width="600" height="400">
+    <img src="{% static "06.jpg" %}" alt="Територія Лiкарнi" width="600" height="400">
   </a>
-  <div class="desc">Статуя в парку</div>
+  <div class="desc">Територія Лiкарнi</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="{% static "07.jpg" %}">
-    <img src="{% static "07.jpg" %}" alt="Вхiд" width="600" height="400">
+    <img src="{% static "07.jpg" %}" alt="Фiзкабинет" width="600" height="400">
   </a>
-  <div class="desc">Процедурна палата</div>
+  <div class="desc">Фiзкабинет</div>
 </div>
 
 <div class="gallery">
@@ -101,12 +61,7 @@
   <div class="desc">Лабораторiя</div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="{% static "09.jpg" %}">
-    <img src="{% static "09.jpg" %}" alt="Стомат. Кабiнет" width="600" height="400">
-  </a>
-  <div class="desc">Стомат. Кабiнет</div>
-</div>
+
 
 <div class="gallery">
   <a target="_blank" href="{% static "10.jpg" %}">
@@ -115,12 +70,7 @@
   <div class="desc">Стомат. Кабiнет </div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="{% static "1.jpg" %}">
-    <img src="{% static "11.jpg" %}" alt="Палата для хворих" width="600" height="400">
-  </a>
-  <div class="desc">Палата для хворих"</div>
-</div>
+
 
 <div class="gallery">
   <a target="_blank" href="{% static "12.jpg" %}">
@@ -139,23 +89,23 @@
 
 <div class="gallery">
   <a target="_blank" href="{% static "14.jpg" %}">
-    <img src="{% static "14.jpg" %}" alt="Вхiд" width="600" height="400">
+    <img src="{% static "14.jpg" %}" alt="Їдальня" width="600" height="400">
   </a>
   <div class="desc">Їдальня</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="{% static "15.jpg" %}">
-    <img src="{% static "15.jpg" %}" alt="Вхiд" width="600" height="400">
+    <img src="{% static "15.jpg" %}" alt="Вiддiлення" width="600" height="400">
   </a>
   <div class="desc">Вiддiлення</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="{% static "16.jpg" %}">
-    <img src="{% static "16.jpg" %}" alt="Сестринська" width="600" height="400">
+    <img src="{% static "16.jpg" %}" alt="Маніпуляційний кабінет" width="600" height="400">
   </a>
-  <div class="desc">Сестринська</div>
+  <div class="desc">Маніпуляційний кабінет</div>
 </div>
 
 <div class="gallery">
@@ -167,20 +117,66 @@
 
 <div class="gallery">
   <a target="_blank" href="{% static "18.jpg" %}">
-    <img src="{% static "18.jpg" %}" alt="Вiддiлення Службова частина" width="600" height="400">
+    <img src="{% static "18.jpg" %}" alt="Вiддiлення службова частина" width="600" height="400">
   </a>
-  <div class="desc">Вiддiлення Службова частина</div>
+  <div class="desc">Вiддiлення службова частина</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="{% static "15.jpg" %}">
-    <img src="{% static "19.jpg" %}" alt="Вiддiлення для хворих" width="600" height="400">
+  <a target="_blank" href="{% static "22.jpg" %}">
+    <img src="{% static "22.jpg" %}" alt="кабінет психотерапії" width="600" height="400">
   </a>
-  <div class="desc">Вiддiлення для хворих</div>
+  <div class="desc">кабінет психотерапії</div>
 </div>
-        
-        
-        
 
-    </body>
-</html>
+<div class="gallery">
+  <a target="_blank" href="{% static "09.jpg" %}">
+    <img src="{% static "09.jpg" %}" alt="Санітарна кімната для пацієнтів" width="600" height="400">
+  </a>
+  <div class="desc">Санітарна кімната для пацієнтів</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="{% static "23.jpg" %}">
+    <img src="{% static "23.jpg" %}" alt="Туалет для пацієнтів" width="600" height="400">
+  </a>
+  <div class="desc">Туалет для пацієнтів</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "24.jpg" %}">
+    <img src="{% static "24.jpg" %}" alt="Душова кімната для пацієнтів" width="600" height="400">
+  </a>
+  <div class="desc">Душова кімната для пацієнтів</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "25.jpg" %}">
+    <img src="{% static "25.jpg" %}" alt="Реабілітаційний центр" width="600" height="400">
+  </a>
+  <div class="desc">Реабілітаційний центр</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "26.jpg" %}">
+    <img src="{% static "26.jpg" %}" alt="Спортивна кімната" width="600" height="400">
+  </a>
+  <div class="desc">Спортивна кімната</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "27.jpg" %}">
+    <img src="{% static "27.jpg" %}" alt="Музичний зал" width="600" height="400">
+  </a>
+  <div class="desc">Музичний зал</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "28.jpg" %}">
+    <img src="{% static "28.jpg" %}" alt=" кімната християнської етики" width="600" height="400">
+  </a>
+  <div class="desc"> кімната християнської етики</div>
+</div>
+
+{% endblock  %}

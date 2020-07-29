@@ -19,3 +19,6 @@ def howtous(request):
 
 def test(request):
     return render(request,'pews/test.html')
+
+def doc(request):
+    return render(request,'pews/doc.html')

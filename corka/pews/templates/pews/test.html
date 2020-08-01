@@ -1,68 +1,189 @@
+{% extends "pews/base.html" %}
 {% load static %}
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="{% static 'css/pew.css' %}">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
-    {% block up %}
-    {% endblock %}
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+{% block title %}
+Фото
+{% endblock  %}
 
-    <title>{% block title %} {% endblock%}</title>
-  </head>
+{% block content %}
+<div>
+<div class="gallery">
+  <a target="_blank" href="{% static "03.jpg" %}">
+    <img src="{% static "03.jpg" %}" alt="Адмiнкорпус">
+  </a>
+  <div class="desc">Адмiнкорпус</div>
+</div>
 
+<div class="gallery">
+  <a target="_blank" href="{% static "02.jpg" %}">
+    <img src="{% static "02.jpg" %}" alt="Парк" >
+  </a>
+  <div class="desc">Парк</div>
+</div>
 
+<div class="gallery">
+  <a target="_blank" href="{% static "04.jpg" %}">
+    <img src="{% static "04.jpg" %}" alt="Мiсце для вiдпочинку">
+  </a>
+  <div class="desc">Мiсце для вiдпочинку</div>
+</div>
 
+<div class="gallery">
+  <a target="_blank" href="{% static "20.jpg" %}">
+    <img src="{% static "20.jpg" %}" alt="Парк">
+  </a>
+  <div class="desc">Парк</div>
+</div>
 
-
-
-
-
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #339966;">
-    <a class="navbar-brand" href="{% url 'post_list' %}">Головна</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Про нас
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="redux">Галлерея фото</a>
-          <a class="dropdown-item" href="gal">Галлерея вiдео</a>
-          <a class="dropdown-item" href="#">Послуги</a>
-          <a class="dropdown-item" href="howtous">Чим добратися?</a>
-          <a class="dropdown-item" href="#">Iсторiя закаладу</a>
-          <a class="dropdown-item" href="#">Структура</a>
-          <a class="dropdown-item" href="doc">Документи</a>
-          <a class="dropdown-item" href="about">Звязок з нами</a>
-
-        </div>
-      </li>
-
-    </div>
-    </nav>
-    <div class="coris">
-      <h1>Привет</h1>
-    </div>
+<div class="gallery">
+  <a target="_blank" href="{% static "21.jpg" %}">
+    <img src="{% static "21.jpg" %}" alt="Парк">
+  </a>
+  <div class="desc">Парк</div>
+</div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
-</html>
+<div class="gallery">
+  <a target="_blank" href="{% static "07.jpg" %}">
+    <img src="{% static "07.jpg" %}" alt="Фiзкабинет">
+  </a>
+  <div class="desc">Фiзкабинет</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "08.jpg" %}">
+    <img src="{% static "08.jpg" %}" alt="Лабораторiя">
+  </a>
+  <div class="desc">Лабораторiя</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="{% static "10.jpg" %}">
+    <img src="{% static "10.jpg" %}" alt="Стомат. Кабiнет " >
+  </a>
+  <div class="desc">Стомат. Кабiнет </div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="{% static "12.jpg" %}">
+    <img src="{% static "12.jpg" %}" alt="Палата для хворих" >
+  </a>
+  <div class="desc">Палата для хворих</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="{% static "13.jpg" %}">
+    <img src="{% static "13.jpg" %}" alt="Їдальня" >
+  </a>
+  <div class="desc">Їдальня</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "14.jpg" %}">
+    <img src="{% static "14.jpg" %}" alt="Їдальня" >
+  </a>
+  <div class="desc">Їдальня</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "15.jpg" %}">
+    <img src="{% static "15.jpg" %}" alt="Вiддiлення" >
+  </a>
+  <div class="desc">Вiддiлення</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "16.jpg" %}">
+    <img src="{% static "16.jpg" %}" alt="Маніпуляційний кабінет" >
+  </a>
+  <div class="desc">Маніпуляційний кабінет</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "17.jpg" %}">
+    <img src="{% static "17.jpg" %}" alt="Кiмната побачень" >
+  </a>
+  <div class="desc">Кiмната побачень</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "18.jpg" %}">
+    <img src="{% static "18.jpg" %}" alt="Вiддiлення службова частина" >
+  </a>
+  <div class="desc">Вiддiлення службова частина</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "22.jpg" %}">
+    <img src="{% static "22.jpg" %}" alt="кабінет психотерапії">
+  </a>
+  <div class="desc">кабінет психотерапії</div>
+</div>
+
+
+
+
+<div class="gallery">
+  <a target="_blank" href="{% static "23.jpg" %}">
+    <img src="{% static "23.jpg" %}" alt="Туалет для пацієнтів">
+  </a>
+  <div class="desc">Туалет для пацієнтів</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="{% static "25.jpg" %}">
+    <img src="{% static "25.jpg" %}" alt="Реабілітаційний центр" >
+  </a>
+  <div class="desc">Реабілітаційний центр</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "26.jpg" %}">
+    <img src="{% static "26.jpg" %}" alt="Спортивна кімната" >
+  </a>
+  <div class="desc">Спортивна кімната</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "27.jpg" %}">
+    <img src="{% static "27.jpg" %}" alt="Музичний зал" >
+  </a>
+  <div class="desc">Музичний зал</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "28.jpg" %}">
+    <img src="{% static "28.jpg" %}" alt=" кімната християнської етики" >
+  </a>
+  <div class="desc"> кімната християнської етики</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "06.jpg" %}">
+    <img src="{% static "06.jpg" %}" alt="Територія Лiкарнi">
+  </a>
+  <div class="desc">Територія Лiкарнi</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "09.jpg" %}">
+    <img src="{% static "09.jpg" %}" alt="Санітарна кімната для пацієнтів">
+  </a>
+  <div class="desc">Санітарна кімната для пацієнтів</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{% static "24.jpg" %}">
+    <img src="{% static "24.jpg" %}" alt="Душова кімната для пацієнтів">
+  </a>
+  <div class="desc">Душова кімната для пацієнтів</div>
+</div>
+</div>
+
+{% endblock  %}

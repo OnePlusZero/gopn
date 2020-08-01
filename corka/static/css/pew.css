@@ -61,36 +61,6 @@ P.blocktext {
     font-size: large;
 }
 
-
-
-.figma {
-    margin-top: 25px;
-}
-
-.pewus {
-    object-fit: cover;
-    width: 100%;
-    height: 90%;
-  }
-
-.book {
-    column-count: 3;
-    column-width: 200px;
-    column-gap: 2em;
-   }
-.book h1 {
-    column-span: all;
-   }
-
-.pirka {
-    margin: 20;
-}
-
-.furka{
-    margin-left: 20px;
-}
-
-
 .cores {
     margin: 30;
     text-align: center;
@@ -123,8 +93,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 480px;
-  height: 400px;
+
 }
 
 div.gallery:hover {
@@ -133,7 +102,7 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: 358px;
+  height: auto;
 }
 
 div.desc {
@@ -142,7 +111,12 @@ div.desc {
 }
 .leftimg {
     float:left; /* Выравнивание по левому краю */
-    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    margin:0.3%;  /* Отступы вокруг картинки */
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 720px;
+    margin-right: 0.1%;
    }
 
 
@@ -151,3 +125,62 @@ div.desc {
     width: 640px;
     height: 480px;
   }
+
+
+
+.fores {
+      margin: 30;
+      text-align: center;
+      font-size: 16;
+      margin-top: 60px;
+      max-width: 800px;
+
+      margin: 0 auto;
+
+
+
+}
+
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    min-height:560px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+.video-container video, .video-container iframe {
+    position: absolute;
+    border: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 65.9375em) {
+    .video-container {
+      min-height:460px;
+      width: 90%;
+    }
+}
+
+@media screen and (max-width:39.9375em) {
+    .video-container {
+      min-height:240px;
+      width: 100%;
+    }
+}
+
+
+div.containers {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto; /* центрируем основной контейнер */
+}
+img {
+  width: 100%; /* ширина картинки */
+  height: auto; /* высота картинки */
+}

@@ -59,6 +59,7 @@ P.blocktext {
     text-align: center;
     padding-left: 25px;
     font-size: large;
+
 }
 
 .cores {
@@ -180,7 +181,7 @@ div.containers {
   max-width: 960px;
   margin: 0 auto; /* центрируем основной контейнер */
 }
-img {
+.containers img {
   width: 100%; /* ширина картинки */
   height: auto; /* высота картинки */
 }

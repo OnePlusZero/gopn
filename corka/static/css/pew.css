@@ -66,6 +66,14 @@ P.blocktext {
   margin-top: 40px;
 }
 
+p.furk{
+  font-size: x-small;
+}
+
+p.fallen{
+  font-size: 	x-large;
+}
+
 
 .cores {
     font-family: 'Comfortaa';

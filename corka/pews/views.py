@@ -27,3 +27,6 @@ def doc(request):
 def news(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request,"pews/news.html",{'posts': posts})
+
+def struktura(request):
+    return render(request,"pews/struktura.html")

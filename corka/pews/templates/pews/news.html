@@ -1,0 +1,28 @@
+{% extends "pews/base.html" %}
+{% load static %}
+{% block title %}
+Новини
+{% endblock  %}
+
+{% block content %}
+
+   <div class="coruss">
+            <div class="fork">
+                <h1>Тут скоро будуть актуальнi новини! :)</h1>
+
+            <div class="fork">
+              {% for post in posts %}
+              <div class="fork">
+
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <p>опублiковано: {{ post.published_date }}</p>
+              
+              </div>
+
+            {% endfor %}
+          </div>
+          </div>
+    </div>
+
+{% endblock  %}

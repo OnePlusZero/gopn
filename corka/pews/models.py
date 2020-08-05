@@ -6,6 +6,7 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE, null=True, verbose_name="Автор")
     title = models.CharField(max_length=200,verbose_name="Заголовок")
     text = models.TextField(verbose_name="Текст")
+
     created_date = models.DateTimeField(
             default=timezone.now,verbose_name="дата створення")
     published_date = models.DateTimeField(

@@ -19,7 +19,8 @@ def howtous(request):
     return render(request, 'pews/howtous.html')
 
 def test(request):
-    return render(request,'pews/test.html')
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request,'pews/test.html', {'posts':posts})
 
 def doc(request):
     return render(request,'pews/doc.html')

@@ -1,0 +1,15 @@
+{% extends "pews/base.html" %}
+{% load static %}
+{% block title %}
+Новини
+{% endblock  %}
+
+{% block content %}
+    <h1> {{ post.title }} </h1>
+
+      <h2>
+          {{ post.textcontent }}
+      </h2>
+
+
+{% endblock  %}

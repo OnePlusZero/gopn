@@ -41,7 +41,7 @@
 
 
       <li class="nav-item active">
-          <a class="nav-link" href="news">Новини <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'news' %}">Новини <span class="sr-only">(current)</span></a>
       </li>
 
 
@@ -53,14 +53,14 @@
           Про нас
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="redux">Галлерея фото</a>
-          <a class="dropdown-item" href="gal">Галлерея вiдео</a>
+          <a class="dropdown-item" href="{% url 'position_list' %}">Галлерея фото</a>
+          <a class="dropdown-item" href="{% url 'gal' %}">Галлерея вiдео</a>
           <a class="dropdown-item" href="#">Послуги</a>
-          <a class="dropdown-item" href="howtous">Чим добратися?</a>
+          <a class="dropdown-item" href="{% url 'howtous' %}">Чим добратися?</a>
           <a class="dropdown-item" href="#">Iсторiя закаладу</a>
-          <a class="dropdown-item" href="struktura">Структура</a>
-          <a class="dropdown-item" href="doc">Документи</a>
-          <a class="dropdown-item" href="about">Звязок з нами</a>
+          <a class="dropdown-item" href="{% url 'struktura' %}">Структура</a>
+          <a class="dropdown-item" href="{% url 'doc' %}">Документи</a>
+          <a class="dropdown-item" href="{% url 'about' %}">Звязок з нами</a>
         </div>
       </li>
 

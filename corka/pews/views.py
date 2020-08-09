@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Post
 from django.utils import timezone
 
@@ -31,3 +31,8 @@ def news(request):
 
 def struktura(request):
     return render(request,"pews/struktura.html")
+
+
+def post_detail(request, year, month, day, post):
+    post = get_object_or_404(Post, slug=post, created_date__month=month, created_date__year=year,  created_date__day=day)
+    return render(request,'pews/detail.html', {'post':post})

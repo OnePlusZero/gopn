@@ -1,27 +1,35 @@
 {% extends "pews/base.html" %}
 {% load static %}
+
 {% block title %}
-Новини
+Фото
 {% endblock  %}
 
 {% block content %}
 
-   <div class="coruss">
-            <div class="fork">
 
-            <div class="fork">
-              {% for post in posts %}
-              <div class="fork">
+<div class="row mb-2">
 
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p class="fallen">{{ post.text|linebreaksbr }}</p>
-                <p class="furk">опублiковано: {{ post.published_date }}</p>
-
-              </div>
-
-            {% endfor %}
-          </div>
-          </div>
+{% for post in posts %}
+  <div class="col-md-6">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <h3 class="mb-0">{{ post.title }}</h3>
+        <div class="mb-1 text-muted">{{ post.published_date }}</div>
+        <p class="card-text mb-auto">{{ post.text|linebreaksbr }}</p>
+        <a href="{{ post.get_absolute_url }}" class="stretched-link">Читати детально</a>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+      <img  src={% static "medi.jpg" %}   class="bd-placeholder-img" width="200" height="250">
+      </div>
     </div>
+  </div>
+{% endfor %}
+</div>
+
+
+
+
+
 
 {% endblock  %}

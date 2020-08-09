@@ -5,11 +5,16 @@
 {% endblock  %}
 
 {% block content %}
+<div class="coris">
     <h1> {{ post.title }} </h1>
+</div>
 
-      <h2>
+
+
+<div>
+      <p class="termosus"><img  src="{{ MEDIA_URL }}{{ post.picture.url }}"  class="leftimg">
           {{ post.textcontent }}
-      </h2>
-
+      </p>
+</div>
 
 {% endblock  %}

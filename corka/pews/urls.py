@@ -1,6 +1,9 @@
 from django.urls import path
 from .views import position_list, post_list, about, gal, howtous, test, doc, news, struktura, post_detail
-from django.conf.urls import include, url
+from django.conf.urls import include, url, static
+from django.conf import settings
+
+
 
 
 urlpatterns = [
@@ -13,6 +16,6 @@ urlpatterns = [
     path('doc',doc, name='doc'),
     path('news',news, name='news'),
     path('struktura',struktura, name='struktura'),
-    path('<int:year>/<int:month>/<int:day>/<slug:post>/', post_detail, name='post_detail')
+    path('<int:year>/<int:month>/<int:day>/<slug:post>/', post_detail, name='post_detail'),
 
 ]

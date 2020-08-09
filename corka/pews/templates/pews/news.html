@@ -20,7 +20,7 @@
         <a href="{{ post.get_absolute_url }}" class="stretched-link">Читати детально</a>
       </div>
       <div class="col-auto d-none d-lg-block">
-      <img  src={% static "medi.jpg" %}   class="bd-placeholder-img" width="200" height="250">
+      <img  src="{{ MEDIA_URL }}{{ post.picture.url }}"   class="bd-placeholder-img" width="300" height="300">
       </div>
     </div>
   </div>

@@ -7,6 +7,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200,verbose_name="Заголовок")
     text = models.TextField(verbose_name="Текст пiдзаголовка")
     textcontent = models.TextField(verbose_name="Текст новини", null=True)
+    picture = models.ImageField(upload_to='images', blank=True, null=True)
     # slug - поле для формирования
     slug = models.SlugField(max_length=250,unique_for_date='created_date', null=True)
 

@@ -32,7 +32,7 @@ SECRET_KEY = 'w7)k4&oae=cp#(g36wbbojdmq%$!h7i!@x7$ghrs_w7$%bh!5p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gopnl.uk','www.gopnl.uk','18.195.136.103','gopnl.pp.ua','www.gopnl.pp.ua']
+ALLOWED_HOSTS = []
 
 
 # Application definition

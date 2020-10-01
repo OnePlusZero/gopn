@@ -32,7 +32,7 @@ SECRET_KEY = 'w7)k4&oae=cp#(g36wbbojdmq%$!h7i!@x7$ghrs_w7$%bh!5p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.100']
+ALLOWED_HOSTS = ['gopnl.uk','www.gopnl.uk','18.195.136.103','gopnl.pp.ua','www.gopnl.pp.ua']
 
 
 # Application definition
@@ -134,4 +134,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/home/ubuntu/corka/static/pews'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = '/home/ubuntu/gopn/corka/media'

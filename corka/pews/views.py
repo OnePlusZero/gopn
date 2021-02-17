@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Post
+from .models import Post, NewsList
 from django.utils import timezone
 
 # Create your views here.
@@ -35,4 +35,12 @@ def struktura(request):
 
 def post_detail(request, year, month, day, post):
     post = get_object_or_404(Post, slug=post, created_date__month=month, created_date__year=year,  created_date__day=day)
-    return render(request,'pews/detail.html', {'post':post})
+    return render(request,'pews/detail.html', {'post' : post})
+
+def zak(request):
+    newslists = NewsList.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, "pews/zak.html", {'newslists': newslists})
+
+def post_details(request, year, month, day, newslist):
+    newslist = get_object_or_404(NewsList, slug=newslist, created_date__month=month, created_date__year=year, created_date__day=day)
+    return render(request,'pews/detailzak.html', {'newslist': newslist})

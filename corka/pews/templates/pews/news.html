@@ -1,6 +1,8 @@
 {% extends "pews/base.html" %}
 {% load static %}
-
+    {% block up %}
+<link rel="stylesheet" href="{% static 'css/pew.css' %}">
+    {% endblock %}
 {% block title %}
 Фото
 {% endblock  %}

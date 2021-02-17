@@ -1,3 +1,16 @@
+.bd-callout-info {
+    border-left-color: #5bc0de;
+}
+
+
+
+
+p.tuff {
+    font-family: 'Comfortaa';
+    font-size: large;
+    margin-left: 0.2%;
+}
+
 IMG.displayed {
     display: block;
     margin-left: auto;
@@ -120,13 +133,12 @@ div.desc {
   text-align: center;
 }
 .leftimg {
-    float:left; /* Выравнивание по левому краю */
-    margin:0.3%;  /* Отступы вокруг картинки */
-    object-fit: cover;
     height: auto;
     width: 100%;
-    max-width: 720px;
+    max-width: 480px;
     margin-right: 0.3%;
+    margin-high: 0.3%;
+    border: 3px;
    }
 
 
@@ -139,16 +151,8 @@ div.desc {
 
 
 .fores {
-      margin: 30;
       text-align: center;
-      font-size: 16;
-      margin-top: 60px;
       max-width: 800px;
-
-      margin: 0 auto;
-
-
-
 }
 
 
@@ -194,3 +198,4 @@ div.containers {
   width: 100%; /* ширина картинки */
   height: auto; /* высота картинки */
 }
+

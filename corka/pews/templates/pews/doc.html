@@ -1,11 +1,14 @@
 {% extends "pews/base.html" %}
 {% load static %}
+    {% block up %}
+<link rel="stylesheet" href="{% static 'css/pew.css' %}">
+    {% endblock %}
 {% block title %}
 Документи
 {% endblock  %}
 
 {% block content %}
-
+    <div class="container bgcont center-block">
     <div class="row">
       <div class="col-lg-3 col-md-4 col-6">
           <img class="img-fluid" src="{% static "35.jpg" %}" >
@@ -41,5 +44,5 @@
           <img class="img-fluid" src="{% static "44.jpg" %}" >
       </div>
     </div>
-
+   </div>
 {% endblock  %}

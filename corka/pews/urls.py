@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import position_list, post_list, about, gal, howtous, test, doc, news, struktura, post_detail
+from .views import position_list, post_list, about, gal, howtous, test, doc, news, struktura, post_detail, zak, post_details
 from django.conf.urls import include, url, static
 from django.conf import settings
 
@@ -7,7 +7,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('', post_list, name='post_list' ),
+    path('', post_list, name='post_list'),
     path('redux',position_list, name='position_list'),
     path('about',about, name='about'),
     path('gal',gal, name='gal'),
@@ -17,5 +17,7 @@ urlpatterns = [
     path('news',news, name='news'),
     path('struktura',struktura, name='struktura'),
     path('<int:year>/<int:month>/<int:day>/<slug:post>/', post_detail, name='post_detail'),
+    path('zak',zak, name='zak'),
+
 
 ]

@@ -1,12 +1,16 @@
 {% extends "pews/base.html" %}
 {% load static %}
+    {% block up %}
+<link rel="stylesheet" href="{% static 'css/pew.css' %}">
+    {% endblock %}
 {% block title %}
 Вiдео
 {% endblock  %}
 
 {% block content %}
+<div class="container">
+  <div class="row">
 
-    <div class="fores">
         <div class="video-container">
           <iframe  src="https://www.youtube.com/embed/MWv1Scd_zBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -23,6 +27,7 @@
         <div class="video-container">
           <iframe  src="https://www.youtube.com/embed/sBRYVn4KdK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </div>
+</div>
+</div>
 
 {% endblock  %}

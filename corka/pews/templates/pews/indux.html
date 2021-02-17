@@ -1,11 +1,14 @@
 {% extends "pews/base.html" %}
 {% load static %}
+    {% block up %}
+<link rel="stylesheet" href="{% static 'css/pew.css' %}">
+    {% endblock %}
 {% block title %}
 Фото
 {% endblock  %}
 
 {% block content %}
-<div>
+
 <div class="gallery">
   <a target="_blank" href="{% static "03.jpg" %}">
     <img src="{% static "03.jpg" %}" alt="Адмiнкорпус">
@@ -51,7 +54,7 @@
 
 <div class="gallery">
   <a target="_blank" href="{% static "08.jpg" %}">
-    <img src="{% static "08.jpg" %}" alt="Лабораторiя">
+    <img src="{% static "08.jpg" %}" alt="Лабораторiя"/>
   </a>
   <div class="desc">Лабораторiя</div>
 </div>

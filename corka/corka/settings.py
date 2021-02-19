@@ -32,7 +32,7 @@ SECRET_KEY = 'w7)k4&oae=cp#(g36wbbojdmq%$!h7i!@x7$ghrs_w7$%bh!5p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.88.221"]
+ALLOWED_HOSTS = ["0.0.0.0", "gopnl.uk", "gopnl.pp.ua", "www.gopnl.pp.ua","www.gopnl.uk","18.195.136.103","172.31.21.15","ec2-18-195-136-103.eu-central-1.compute.amazonaws.com"]
 
 
 # Application definition
@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pews.apps.PewsConfig',
-    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -117,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'ru-ua'
+LANGUAGE_CODE = 'uk'
 
 TIME_ZONE = 'UTC'
 

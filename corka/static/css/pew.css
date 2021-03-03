@@ -16,7 +16,9 @@
 
 p.tuff {
     font-family: 'Comfortaa';
-    font-size: large;
+    font-size: 14px;
+    line-height: 31px;
+    letter-spacing: -0.023em;
     margin-left: 0.2%;
 }
 

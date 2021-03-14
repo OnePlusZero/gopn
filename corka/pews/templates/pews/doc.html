@@ -1,48 +1,145 @@
 {% extends "pews/base.html" %}
 {% load static %}
     {% block up %}
-<link rel="stylesheet" href="{% static 'css/pew.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pew.css' %}">
     {% endblock %}
+
+
 {% block title %}
 Документи
 {% endblock  %}
 
 {% block content %}
-    <div class="container bgcont center-block">
-    <div class="row">
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "35.jpg" %}" >
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "36.jpg" %}" >
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "37.jpg" %}" >
-      </div>
-    </div>
+<hr>
 
-    <div class="row">
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "39.jpg" %}" >
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "40.jpg" %}" >
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "41.jpg" %}" >
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "42.jpg" %}" >
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "43.jpg" %}" >
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-          <img class="img-fluid" src="{% static "44.jpg" %}" >
-      </div>
-    </div>
-   </div>
+<div class="bd-callout bd-callout-danger">
+<div class="row align-items-center no-gutters">
+<h3 class="text-center alien"> Договір про надання платних медичних послуг</h3>
+<hr>
+<div class="col-md-4">
+<div class="gallery">
+  <a target="_blank" href="{% static "39.jpg" %}">
+    <img src="{% static "39.jpg" %}" alt="Адмiнкорпус">
+  </a>
+  <div class="desc">ст.1</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="gallery">
+  <a target="_blank" href="{% static "40.jpg" %}">
+    <img src="{% static "40.jpg" %}" alt="Адмiнкорпус">
+  </a>
+  <div class="desc">ст.2</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="gallery">
+  <a target="_blank" href="{% static "41.jpg" %}">
+    <img src="{% static "41.jpg" %}" alt="Адмiнкорпус">
+  </a>
+  <div class="desc">ст.3</div>
+</div>
+</div>
+<hr>
+<div class="row align-items-center no-gutters">
+  <div class="col-md-4 rounded mx-auto d-block">
+  <div class="gallery">
+    <a target="_blank" href="{% static "42.jpg" %}">
+      <img src="{% static "42.jpg" %}" alt="Адмiнкорпус">
+    </a>
+    <div class="desc">ст.4</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+<div class="bd-callout bd-callout-danger">
+<div class="row align-items-center no-gutters">
+<h3 class="text-center alien">Акредитаційний сертифікат</h3>
+<hr>
+<div class="row align-items-center no-gutters">
+  <div class="col-md-4 rounded mx-auto d-block">
+  <div class="gallery">
+    <a target="_blank" href="{% static "35.jpg" %}">
+      <img src="{% static "35.jpg" %}" alt="Адмiнкорпус">
+    </a>
+    <div class="desc"></div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<div class="bd-callout bd-callout-danger">
+<div class="row align-items-center no-gutters">
+<h3 class="text-center alien">Витяг МОЗ</h3>
+<hr>
+<div class="row align-items-center no-gutters">
+  <div class="col-md-4 rounded mx-auto d-block">
+  <div class="gallery">
+    <a target="_blank" href="{% static "36.jpg" %}">
+      <img src="{% static "36.jpg" %}" alt="Адмiнкорпус">
+    </a>
+    <div class="desc"></div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<div class="bd-callout bd-callout-danger">
+<div class="row align-items-center no-gutters">
+<h3 class="text-center alien">Ліцензія</h3>
+<hr>
+<div class="row align-items-center no-gutters">
+  <div class="col-md-4 rounded mx-auto d-block">
+  <div class="gallery">
+    <a target="_blank" href="{% static "37.jpg" %}">
+      <img src="{% static "37.jpg" %}" alt="Адмiнкорпус">
+    </a>
+    <div class="desc"></div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<div class="bd-callout bd-callout-danger">
+<div class="row align-items-center no-gutters">
+<h3 class="text-center alien">Тарифи</h3>
+<hr>
+<div class="row align-items-center no-gutters">
+
+  <div class="col-md-4">
+  <div class="gallery">
+    <a target="_blank" href="{% static "43.jpg" %}">
+      <img src="{% static "43.jpg" %}" alt="Адмiнкорпус">
+    </a>
+    <div class="desc">ст.1</div>
+  </div>
+</div>
+<div class="col-md-4">
+<div class="gallery">
+  <a target="_blank" href="{% static "44.jpg" %}">
+    <img src="{% static "44.jpg" %}" alt="Адмiнкорпус">
+  </a>
+  <div class="desc">ст.2</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<hr>
+
 {% endblock  %}

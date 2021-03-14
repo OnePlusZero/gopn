@@ -2,43 +2,87 @@
 {% load static %}
     {% block up %}
 <link rel="stylesheet" href="{% static 'css/pew.css' %}">
+<style>
+<style>
+    .pb-video-container {
+        padding-top: 20px;
+        background: #bdc3c7;
+        font-family: Lato;
+    }
+
+    .pb-video {
+        border: 1px solid #e6e6e6;
+        padding: 5px;
+    }
+
+        .pb-video:hover {
+            background: #2c3e50;
+        }
+
+    .pb-video-frame {
+        transition: width 2s, height 2s;
+    }
+
+        .pb-video-frame:hover {
+            height: 300px;
+        }
+
+    .pb-row {
+        margin-bottom: 10px;
+    }
+</style>
+  </style>
     {% endblock %}
 {% block title %}
 Вiдео
 {% endblock  %}
 
 {% block content %}
-<div class="row align-items-center no-gutters">
-<div class="col-xl-6 col-lg-6 col-md-12">
-     <div class="video-container">
-    <iframe  src="https://www.youtube.com/embed/MWv1Scd_zBU"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     </div>
+
+
+<div class="container-fluid pb-video-container">
+    <div class="col-md-10 col-md-offset-1 ">
+        <div class="bd-callout bd-callout-info">
+        <h3 class="text-center alien">Комунальне підприємство "Гейківська багатопрофільна лікарня з надання психіатричної допомоги" Дніпропетровської обласної ради"</h3>
+      </div>
+        <div class="row pb-row">
+            <div class="col-md-4 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/MWv1Scd_zBU" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Парк</label>
+            </div>
+            <div class="col-md-4 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/ISkJHeP3Hws" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Приймальне двір</label>
+            </div>
+            <div class="col-md-4 pb-video">
+                <iframe class="pb-video-frame " width="100%" height="230" src="https://www.youtube.com/embed/SKV1g4PE4cM" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Галерея</label>
+            </div>
+
+        </div>
+        <div class="row pb-row">
+            <div class="col-md-4 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/8XkNmKd1ciM" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Парк</label>
+            </div>
+            <div class="col-md-4 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/sBRYVn4KdK8" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Приймальне двір</label>
+            </div>
+            <div class="col-md-4 pb-video">
+                <iframe class="pb-video-frame " width="100%" height="230" src="https://www.youtube.com/embed/w2EYdrijxxY" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Будьте здорові</label>
+            </div>
+
+        </div>
+
+    </div>
 </div>
 
-<div class="col-xl-6 col-lg-6 col-md-12">
-     <div class="video-container">
-    <iframe  src="https://www.youtube.com/embed/ISkJHeP3Hws"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     </div>
-</div>
 
-<div class="col-xl-6 col-lg-6 col-md-12">
-     <div class="video-container">
-    <iframe  src="https://www.youtube.com/embed/SKV1g4PE4cM"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     </div>
-</div>
 
-<div class="col-xl-6 col-lg-6 col-md-12">
-     <div class="video-container">
-    <iframe  src="https://www.youtube.com/embed/8XkNmKd1ciM"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     </div>
-</div>
 
-<div class="col-xl-6 col-lg-6 col-md-12">
-     <div class="video-container">
-    <iframe  src="https://www.youtube.com/embed/sBRYVn4KdK8"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     </div>
-</div>
 
 </div>
 
-{% endblock  %}
+{% endblock %}

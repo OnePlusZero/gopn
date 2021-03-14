@@ -7,12 +7,17 @@
     <meta charset="utf-8">
     {% block up %}
     {% endblock %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet" type="text/css">
     <meta name="google-site-verification" content="ZKL0QAVB1jU6IKjhWtk5kRsDv4soys100U6hKfKhNFY" />
     <link rel="alternate" href="http://www.gopnl.uk" hreflang="uk-ua" />
     <link rel="alternate" href="http://www.gopnl.pp.ua" hreflang="uk-ua" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script data-ad-client="ca-pub-9144226593139391" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script data-ad-client="ca-pub-9144226593139391" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -97,7 +102,7 @@ c-68 78 -207 120 -300 89z"/>
 
 
       <li class="nav-item active ">
-        <a class="nav-link" href="{% url 'news' %}"><strong>Новини</strong> <span class="sr-only"></span></a>
+        <a class="nav-link aliens" href="{% url 'news' %}"><strong>Новини</strong> <span class="sr-only"></span></a>
       </li>
 
 
@@ -105,29 +110,35 @@ c-68 78 -207 120 -300 89z"/>
 
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle aliens" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <strong>Про нас</strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'position_list' %}">Галлерея фото</a>
-          <a class="dropdown-item" href="{% url 'gal' %}">Галлерея вiдео</a>
-          <a class="dropdown-item" href="{% url 'howtous' %}">Чим добратися?</a>
-          <a class="dropdown-item" href="#">Iсторiя закаладу</a>
-          <a class="dropdown-item" href="{% url 'struktura' %}">Структура</a>
-          <a class="dropdown-item" href="{% url 'doc' %}">Документи</a>
+          <a class="dropdown-item aliens" href="{% url 'position_list' %}">Галлерея фото</a>
+          <a class="dropdown-item aliens" href="{% url 'gal' %}">Галлерея вiдео</a>
+          <a class="dropdown-item aliens" href="{% url 'howtous' %}">Чим добратися?</a>
+          <a class="dropdown-item aliens" href="#">Iсторiя закаладу</a>
+          <a class="dropdown-item aliens" href="{% url 'struktura' %}">Структура</a>
+          <a class="dropdown-item aliens" href="{% url 'doc' %}">Документи</a>
         </div>
       </li>
      </ul>
 
      <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
       <li class="nav-item nav-item col-6 col-md-auto ">
-        <a class="nav-link" href="#"><strong>Послуги</strong> <span class="sr-only"></span></a>
+        <a class="nav-link aliens" href="#"><strong>Послуги</strong> <span class="sr-only"></span></a>
       </li>
-      <li class="nav-item nav-item col-6 col-md-auto ">
-        <a class="nav-link" href="{% url 'zak' %}"><strong>Публічна інфо</strong> <span class="sr-only"></span></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle aliens" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Публічна інфо</strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item aliens" href="{% url 'zak'  %}">Річні плани закупівель</a>
+          <a class="dropdown-item aliens" href="{% url 'test' %}">Закупівлі</a>
+        </div>
       </li>
        <li class="nav-item nav-item col-6 col-md-auto ">
-        <a class="nav-link" href="{% url 'about' %}"><strong>Звязок з нами</strong> <span class="sr-only"></span></a>
+        <a class="nav-link aliens" href="{% url 'about' %}"><strong>Звязок з нами</strong> <span class="sr-only"></span></a>
       </li>
 
      </ul>
@@ -136,6 +147,7 @@ c-68 78 -207 120 -300 89z"/>
     </nav>
 </header>
 <main>
+    {% block osk %}
   <div class="container px-4 px-md-3">
     <div class="row align-items-lg-center">
 
@@ -148,7 +160,7 @@ c-68 78 -207 120 -300 89z"/>
 
     </div>
   </div>
-
+{% endblock %}
 </main>
 
     <!-- Optional JavaScript -->

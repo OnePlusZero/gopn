@@ -1,7 +1,7 @@
 {% extends "pews/base.html" %}
 {% load static %}
     {% block up %}
-
+       <link rel="stylesheet" href="{% static 'css/pew.css' %}">
     {% endblock %}
 {% block title %}
 Тест
@@ -9,7 +9,7 @@
 
 {% block content %}
 
-       
+
 
   <script type="text/javascript"> var _zk_uaprom = _zk_uaprom || []; _zk_uaprom.push( ['APP_ID', '111e83ab-3e0d-4279-9786-fc7089d5c12b' ],['CONTAINER_ID', 'prom_state_purchase' ],['LOCALE', 'uk' ],['ENTITYTYPE', 0 ],['SRN', ['01988120']] ); (function(d, tag, id) { if (d.getElementById(id)) return; var pjs = d.createElement(tag); pjs.id = id; pjs.type = 'text/javascript'; pjs.src = '//zk-cabinet.c.prom.st/js/build/zakupki_widget_init_v2/zakupki_widget_init_v2_wp.d7ecb.js'; pjs.async = true; var sc = d.getElementsByTagName(tag)[0]; sc.parentNode.insertBefore(pjs, sc); })(document, 'script', 'zakupki_uaprom_id'); </script> <div id="prom_state_purchase"></div>
 {% endblock  %}

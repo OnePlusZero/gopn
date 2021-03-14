@@ -1,3 +1,10 @@
+.omg{
+    padding: 10px;
+}
+
+
+
+
 .bd-callout-info {
     border-left-color: #5bc0de;
 }
@@ -16,11 +23,12 @@
 
 p.tuff {
     font-family: 'Comfortaa';
-    font-size: 14px;
+    font-size: 12px;
     line-height: 31px;
     letter-spacing: -0.023em;
     margin-left: 0.2%;
 }
+
 
 IMG.displayed {
     display: block;
@@ -150,7 +158,26 @@ div.desc {
     margin-right: 0.3%;
     margin-high: 0.3%;
     border: 3px;
-   }
+}
+
+.leftimgg {
+   height: auto;
+   width: 100%;
+   max-width: 390px;
+   margin-right: 0.3%;
+   margin-high: 0.3%;
+   border: 3px;
+}
+
+.leftimggg {
+   height: auto;
+   width: 100%;
+   max-width: 320px;
+   margin-right: 0.3%;
+   margin-high: 0.3%;
+   border: 3px;
+}
+
 
 
 .myImg {
@@ -172,8 +199,7 @@ div.desc {
     position: relative;
     min-height:320px;
     width: 80%;
-    margin: 0 auto;
-    margin-top: 4px;
+
 }
 
 .video-container video, .video-container iframe {
@@ -210,3 +236,13 @@ div.containers {
   height: auto; /* высота картинки */
 }
 
+
+h3.alien{
+  font-family: 'Comfortaa',
+  cursive;
+}
+
+a.aliens{
+  font-family: 'Montserrat Alternates',
+  sans-serif;
+}

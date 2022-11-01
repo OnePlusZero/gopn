@@ -1,6 +1,5 @@
 from django.urls import path
-from .views import position_list, post_list, about, gal, howtous, test, doc, news, struktura, post_detail, zak, post_details
-from django.conf.urls import include, static, url
+from .views import *
 from django.conf import settings
 
 

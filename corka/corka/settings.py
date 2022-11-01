@@ -126,3 +126,4 @@ STATIC_ROOT = '/home/ubuntu/corka/static/pews'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/home/ubuntu/gopn/corka/media'
+DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
